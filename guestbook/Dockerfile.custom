@@ -1,0 +1,2 @@
+from ghcr.io/makyraen/inhatc-devops-guestbook:v1
+env APP_TITLE = "방명록" THEME_COLOR="#7C9A82" eof
