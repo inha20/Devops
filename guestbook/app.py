@@ -115,7 +115,7 @@ def api_entries():
 
 @app.route("/healthz")
 def healthz():
-    return jsonify({"status": "ok", "hostname": HOSTNAME}), 200
+    return jsonify({"status": "ok", "hostname": HOSTNAME}), 500
 
 
 @app.route("/readyz")
@@ -127,7 +127,7 @@ def readyz():
             redis_client.ping()
         except Exception:
             return jsonify({"status": "not ready", "reason": "redis ping failed"}), 503
-    return jsonify({"status": "ready"}), 200
+    return jsonify({"status": "ready"}), 500
 
 
 if __name__ == "__main__":
