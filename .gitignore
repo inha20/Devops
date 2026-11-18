@@ -1,1 +1,5 @@
 .env
+
+guestbook/k8s/secret.yaml
+*.pyc
+__pycache__/
