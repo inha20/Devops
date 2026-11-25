@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: guestbook
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/inha20/guestbook:c1b2f1c
+          image: ghcr.io/inha20/guestbook:8825180
           ports:
             - containerPort: 5000
           envFrom:

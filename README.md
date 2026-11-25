@@ -105,4 +105,5 @@
 - [`week09/README.md`](week09/README.md): Kubernetes 기초 실습
 - [`week10/README.md`](week10/README.md): Kubernetes Deployment, Service, 롤링 업데이트 및 롤백
 - [`week11/README.md`](week11/README.md): ConfigMap, Secret, Readiness/Liveness Probe 및 트러블슈팅
+- [`week12/README.md`](week12/README.md): GitHub Actions CI 파이프라인 구성 및 Branch Protection 검증
 - [`week13/README.md`](week13/README.md): GitOps(Argo CD) 및 Prometheus/Grafana 모니터링 실습

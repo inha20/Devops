@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: guestbook-config
 data:
-  APP_TITLE: "New 방명록 (k8s)"
-  THEME_COLOR: "#e11d48"
+  APP_TITLE: "최종훈의 방명록"
+  THEME_COLOR: "#2563eb"
   REDIS_HOST: "redis"
   REDIS_PORT: "6379"
