@@ -20,3 +20,10 @@ class GuestbookTest(unittest.TestCase):
         entries = self.client.get('/api/entries').get_json()
         self.assertEqual(entries['count'], 1)
         self.assertEqual(entries['entries'][0]['message'], 'hello')
+
+    def test_index_renders_clean_form(self):
+        response = self.client.get('/')
+        html = response.get_data(as_text=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('<input name="name" placeholder=', html)
+        self.assertNotIn('"placeholder=', html)
